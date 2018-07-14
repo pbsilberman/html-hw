@@ -38,3 +38,9 @@ body {
 .text-muted {
     color: white;
 }
+
+#summary-image {
+    width: 220px;
+    height: 200px;
+    float: left;
+}
