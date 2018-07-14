@@ -11,26 +11,38 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">      
-      <div class="navbar-header">
-        <a class="navbar-brand" href="../index.html">Lattitude</a>
-      </div>    
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Max Temperature</a></li>
-            <li><a href="../visual-humidity/index.html">Humidity</a></li>
-            <li><a href="../visual-cloudy/index.html">Cloudiness</a></li>
-            <li><a href="../visual-wind/index.html">Wind Speed</a></li> 
-          </ul>
-        </li>
-        <li><a href="../comparison/index.html">Comparison</a></li>
-        <li><a href="../project-data/index.html">Data</a></li>
-      </ul>
-    </div>      
-  </nav>
+    <nav class="navbar navbar-expand-md navbar-default">
+        <div class="container-fluid">
+          
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html">Lattitude</a>
+          </div>
+          
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                    <li><a class="dropdown-item" href="#">Max Temperature</a></li>`
+                    <li><a class="dropdown-item" href="../visual-humidity/index.html">Humidity</a></li>
+                    <li><a class="dropdown-item" href="../visual-cloudy/index.html">Cloudiness</a></li>
+                    <li><a class="dropdown-item" href="../visual-wind/index.html">Wind Speed</a></li> 
+                  </ul>
+                </li>
+                <li><a href="../comparison/index.html">Comparison</a></li>
+                <li><a href="../project-data/index.html">Data</a></li>
+              </ul>
+          </div>
+          
+        </div>
+          
+      </nav>
 
   <div class="container">
     <div class="row">
@@ -62,7 +74,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-  <script src="../../dist/js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 

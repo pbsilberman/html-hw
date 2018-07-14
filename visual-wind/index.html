@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Humidity</title>
+  <title>Wind Speed</title>  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="../style.css">
 </head>
@@ -30,9 +30,9 @@
                   <a href="#" class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
                   <ul class="dropdown-menu" aria-labelledby="dropdown01">
                     <li><a class="dropdown-item" href="../visual-maxtemp/index.html">Max Temperature</a></li>`
-                    <li><a class="dropdown-item" href="#">Humidity</a></li>
+                    <li><a class="dropdown-item" href="../visual-humidity/index.html">Humidity</a></li>
                     <li><a class="dropdown-item" href="../visual-cloudy/index.html">Cloudiness</a></li>
-                    <li><a class="dropdown-item" href="../visual-wind/index.html">Wind Speed</a></li> 
+                    <li><a class="dropdown-item" href="#">Wind Speed</a></li> 
                   </ul>
                 </li>
                 <li><a href="../comparison/index.html">Comparison</a></li>
@@ -47,20 +47,22 @@
   <div class="container">
     <div class="row">
       <div class="col-md-7 col-sm-12" id="summary">
-        <h1>Humidity</h1>
+        <h1>Wind Speed</h1>
         <hr>
-        <p><img src="../output_13_0.png" alt="lat vs humidity" id="main-image"></p>
-        <p style="padding-top:20px;">North of the equator, in particular 20-40 degrees, appears to be the most humid part of the world. 
-          On average, it appears that being north of the equator lends itself to a more humid environment vs. south of the equator.</p>
+        <p><img src="../output_17_0.png" alt="lat vs wind speed" id="main-image"></p>
+        <p style="padding-top:20px;">
+          There appears to be little correlation between wind speed and latitude. In the aggregate, high latitudes 
+          appear to have higher wind speeds, but this could easily be ascribed to variance. 
+        </p>
       </div>
       <div class="col-md-1 col-sm-12"></div>
       <div class="col-md-4 col-sm-12" id="visualizations">
           <h1 id="visualtext">Visualizations</h1>
           <hr>
           <a href="../visual-maxtemp/index.html"><img src="../output_11_0.png" alt="lat vs max temp" class="visualization-imgs"></a>
-          <a href="#"><img src="../output_13_0.png" alt="lat vs humidity" class="visualization-imgs" id="selected"></a>
+          <a href="../visual-humidity/index.html"><img src="../output_13_0.png" alt="lat vs humidity" class="visualization-imgs"></a>
           <a href="../visual-cloudy/index.html"><img src="../output_15_0.png" alt="lat vs cloudiness" class="visualization-imgs"></a>
-          <a href="../visual-wind/index.html"><img src="../output_17_0.png" alt="lat vs wind speed" class="visualization-imgs"></a>
+          <a href="#"><img src="../output_17_0.png" alt="lat vs wind speed" class="visualization-imgs" id="selected"></a>
       </div>
     </div>
   </div>
