@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Max Temperature</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
@@ -13,31 +13,31 @@
     <div class="container-fluid">
       
       <div class="navbar-header">
-        <a class="navbar-brand" href="#https://pbsilberman.github.io/html-hw/">Latitude</a>
+        <a class="navbar-brand" href="../index.html">Lattitude</a>
       </div>
 
-        <ul class="nav navbar-nav navbar-right">
-          <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown01">
-              <li><a class="dropdown-item" href="visual-maxtemp/index.html">Max Temperature</a></li>
-              <li><a class="dropdown-item" href="#">Visualization 2</a></li>
-              <li><a class="dropdown-item" href="#">Visualization 3</a></li>
-              <li><a class="dropdown-item" href="#">Visualization 4</a></li> 
-            </ul>
-          </li>
-          <li><a href="#">Comparison</a></li>
-          <li><a href="#">Data</a></li>
-        </ul>
-      </div>
-      
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="dropdown01">
+            <li><a class="dropdown-item" href="#">Max Temperature</a></li>
+            <li><a class="dropdown-item" href="#">Humidity</a></li>
+            <li><a class="dropdown-item" href="#">Cloudiness</a></li>
+            <li><a class="dropdown-item" href="#">Wind Speed</a></li> 
+          </ul>
+        </li>
+        <li><a href="#">Comparison</a></li>
+        <li><a href="#">Data</a></li>
+      </ul>
+    </div>      
   </nav>
+
   <div class="container">
     <div class="row">
       <div class="col-md-7 col-sm-12" id="summary">
         <h1>Max Temperature</h1>
         <hr>
-        <p><img src="output_11_0.png" alt="lat vs max temp" id="summary-image"></p>
+        <p><img src="output_11_0.png" alt="lat vs max temp" id="main-image"></p>
         <p style="padding-top:20px;">There is a clear correlation between distance from the center of the Earth and maximum temperature. 
           As latitude increase or decreases from around the 0-20 degree range of latitudes, the temperature decreases. 
           This makes perfect sense logically. The further you are from the equator, the colder you would expect to be.</p>
@@ -46,7 +46,7 @@
       <div class="col-md-4 col-sm-12" id="visualizations">
           <h1 id="visualtext">Visualizations</h1>
           <hr>
-          <a href="visual-maxtemp/index.html"><img src="output_11_0.png" alt="lat vs max temp" class="visualization-imgs" id="selected"></a>
+          <a href="#"><img src="output_11_0.png" alt="lat vs max temp" class="visualization-imgs" id="selected"></a>
           <a href="#"><img src="output_13_0.png" alt="lat vs humidity" class="visualization-imgs"></a>
           <a href="#"><img src="output_15_0.png" alt="lat vs cloudiness" class="visualization-imgs"></a>
           <a href="#"><img src="output_17_0.png" alt="lat vs wind speed" class="visualization-imgs"></a>
