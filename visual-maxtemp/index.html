@@ -3,32 +3,35 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Max Temperature</title>
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
   <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      
+    <div class="container-fluid">      
       <div class="navbar-header">
         <a class="navbar-brand" href="../index.html">Lattitude</a>
       </div>
-
-      <ul class="nav navbar-nav navbar-right">
-        <li class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
-          <ul class="dropdown-menu" aria-labelledby="dropdown01">
-            <li><a class="dropdown-item" href="#">Max Temperature</a></li>
-            <li><a class="dropdown-item" href="#">Humidity</a></li>
-            <li><a class="dropdown-item" href="#">Cloudiness</a></li>
-            <li><a class="dropdown-item" href="#">Wind Speed</a></li> 
-          </ul>
-        </li>
-        <li><a href="#">Comparison</a></li>
-        <li><a href="#">Data</a></li>
-      </ul>
+      <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Max Temperature</a></li>
+              <li><a href="../visual-humidity/index.html">Humidity</a></li>
+              <li><a href="../visual-cloudy/index.html">Cloudiness</a></li>
+              <li><a href="../visual-wind/index.html">Wind Speed</a></li> 
+            </ul>
+          </li>
+          <li><a href="../comparison/index.html">Comparison</a></li>
+          <li><a href="../project-data/index.html">Data</a></li>
+        </ul>
+      </div>
     </div>      
   </nav>
 
@@ -37,7 +40,7 @@
       <div class="col-md-7 col-sm-12" id="summary">
         <h1>Max Temperature</h1>
         <hr>
-        <p><img src="output_11_0.png" alt="lat vs max temp" id="main-image"></p>
+        <p><img src="../output_11_0.png" alt="lat vs max temp" id="main-image"></p>
         <p style="padding-top:20px;">There is a clear correlation between distance from the center of the Earth and maximum temperature. 
           As latitude increase or decreases from around the 0-20 degree range of latitudes, the temperature decreases. 
           This makes perfect sense logically. The further you are from the equator, the colder you would expect to be.</p>
@@ -46,10 +49,10 @@
       <div class="col-md-4 col-sm-12" id="visualizations">
           <h1 id="visualtext">Visualizations</h1>
           <hr>
-          <a href="#"><img src="output_11_0.png" alt="lat vs max temp" class="visualization-imgs" id="selected"></a>
-          <a href="#"><img src="output_13_0.png" alt="lat vs humidity" class="visualization-imgs"></a>
-          <a href="#"><img src="output_15_0.png" alt="lat vs cloudiness" class="visualization-imgs"></a>
-          <a href="#"><img src="output_17_0.png" alt="lat vs wind speed" class="visualization-imgs"></a>
+          <a href="#"><img src="../output_11_0.png" alt="lat vs max temp" class="visualization-imgs" id="selected"></a>
+          <a href="../visual-humidity/index.html"><img src="../output_13_0.png" alt="lat vs humidity" class="visualization-imgs"></a>
+          <a href="../visual-cloudy/index.html"><img src="../output_15_0.png" alt="lat vs cloudiness" class="visualization-imgs"></a>
+          <a href="../visual-wind/index.html"><img src="../output_17_0.png" alt="lat vs wind speed" class="visualization-imgs"></a>
       </div>
     </div>
   </div>
@@ -60,7 +63,11 @@
     </div>
   </footer>
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="../../dist/js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 
 </body>
 

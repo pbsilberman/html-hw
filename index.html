@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-default">
+  <nav class="navbar navbar-expand-md navbar-default">
     <div class="container-fluid">
       
       <div class="navbar-header">
@@ -21,16 +21,17 @@
             <li class="nav-item dropdown">
               <a href="#" class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                <li><a class="dropdown-item" href="#">Max Temperature</a></li>
-                <li><a class="dropdown-item" href="#">Humidity</a></li>
-                <li><a class="dropdown-item" href="#">Cloudiness</a></li>
-                <li><a class="dropdown-item" href="#">Wind Speed</a></li> 
+                <li><a class="dropdown-item" href="visual-maxtemp/index.html">Max Temperature</a></li>`
+                <li><a class="dropdown-item" href="visual-humidity/index.html">Humidity</a></li>
+                <li><a class="dropdown-item" href="visual-cloudy/index.html">Cloudiness</a></li>
+                <li><a class="dropdown-item" href="visual-wind/index.html">Wind Speed</a></li> 
               </ul>
             </li>
-            <li><a href="#">Comparison</a></li>
-            <li><a href="#">Data</a></li>
+            <li><a href="comparison/index.html">Comparison</a></li>
+            <li><a href="project-data/index.html">Data</a></li>
           </ul>
       </div>
+      
     </div>
       
   </nav>
@@ -43,15 +44,16 @@
         <p style="padding-top:20px;">This website will exhibit the results of the WeatherPy project. In that project, we randomly generated approximately 500 cities and built visualizations showing
           various weather outcomes vs distance from the equator. The various images that were created as part of the project are displayed on this website, as well
           as the raw data that was used in the analysis.</p>
+        <p>Clicking on any of the individual images will take you to their respective pages. Additionally, you can see all of the images together on the Comparisons page.</p>
       </div>
       <div class="col-md-1 col-sm-12"></div>
       <div class="col-md-4 col-sm-12" id="visualizations">
           <h1 id="visualtext">Visualizations</h1>
           <hr>
           <a href="visual-maxtemp/index.html"><img src="output_11_0.png" alt="lat vs max temp" class="visualization-imgs"></a>
-          <a href="#"><img src="output_13_0.png" alt="lat vs humidity" class="visualization-imgs"></a>
-          <a href="#"><img src="output_15_0.png" alt="lat vs cloudiness" class="visualization-imgs"></a>
-          <a href="#"><img src="output_17_0.png" alt="lat vs wind speed" class="visualization-imgs"></a>
+          <a href="visual-humidity/index.html"><img src="output_13_0.png" alt="lat vs humidity" class="visualization-imgs"></a>
+          <a href="visual-cloudy/index.html"><img src="output_15_0.png" alt="lat vs cloudiness" class="visualization-imgs"></a>
+          <a href="visual-wind/index.html"><img src="output_17_0.png" alt="lat vs wind speed" class="visualization-imgs"></a>
       </div>
     </div>
   </div>
