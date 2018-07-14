@@ -1,5 +1,13 @@
+.navbar-header .navbar-brand {
+    font-size: 28px;
+    color: white;
+    background-color: #4aaaa5;
+    margin-left: 100px;
+    font-weight: bold;
+}
 h1 {
-    color: #00E9B8
+    color: #4aaaa5;
+    font-weight: bold;
 }
 
 #summary {
@@ -9,9 +17,12 @@ h1 {
 #visualizations {
     background-color: white;
 }
+#visualtext {
+    font-size: 28px;
+}
 
 body {
-    background-color: #e5e5e5;
+    background-color: #ededed;
 }
 
 .footer {
